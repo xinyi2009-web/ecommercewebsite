@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: "EB+Garamond", sans-serif;
+    margin-right: 0px;
+}
+
+body{
+    background: url(images/review.bg.jpg);
+    background-size: 100%;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease; 
+}
+
+header .brand{
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-left: -60px;
+}
+
+header.navigation{
+    position: fixed;
+    
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+    margin-top: 50px;
+    margin-right: 2px;
+}
+
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    gap: 10rem;
+}
+
+.container_left h1{
+    margin-top: 10rem;
+    font-size: 52px;
+    font-weight: 500;
+    color: #fff;
+    font-family: initial;
+}
+
+.container_right{
+    display: grid;
+    gap: 2rem;
+}
+
+.card{
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: rgba(223, 219, 219, 0.641);
+    border-radius: 1rem;box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card img{
+    max-width: 75px;
+    border-radius: 100%;
+}
+
+.card_content{
+    display: flex;
+    gap: 1rem;
+}
+
+.card_content span i{
+    font-size: 3rem;
+    color: #000;
+}
+
+.card_details p{
+    font-style: italic;
+    color: #000;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+.card_details h4{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 905px;
+}
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}

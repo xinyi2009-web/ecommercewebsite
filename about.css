@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "EB+Garamond", sans-serif;
+    margin-right: 0px;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease; 
+}
+
+header .brand{
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-left: -60px;
+}
+
+header.navigation{
+    position: fixed;
+    
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+    margin-top: 50px;
+    margin-right: 2px;
+}
+
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+body{
+   background: url(images/abtbg.jpg);
+}
+
+.TNT{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.TNT img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.TNT h3{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.shituan-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    word-spacing: 5px;
+    line-height: 140%;
+}
+
+.MJQ{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.MJQ img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.MJQ h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.MJQ h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.jiaqi-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    word-spacing: 5px;
+    line-height: 140%;
+}
+
+.DCX{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.DCX img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.DCX h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.DCX h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.chengxin-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    word-spacing: 5px;
+    line-height: 140%;
+}
+
+.SYX{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.SYX img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.SYX h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.SYX h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.yaxuan-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    word-spacing: 5px;
+    line-height: 140%;
+}
+
+.LYW{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.LYW img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.LYW h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.LYW h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.yaowen-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    word-spacing: 5px;
+    line-height: 140%;
+}
+
+
+.ZZY{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.ZZY img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.ZZY h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ZZY h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.zhenyuan-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    word-spacing: 5px;
+    line-height: 140%;
+}
+
+
+.YHX{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.zhenyuan-text img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.YHX{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.YHX img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.YHX h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.YHX h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.haoxiang-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    word-spacing: 5px;
+    line-height: 140%;
+}
+
+
+.HJL{
+    border-style: solid;
+    margin: 100px 50px 20px 50px;
+    display: flex;
+}
+
+.HJL img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.HJL h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.HJL h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.junlin-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    word-spacing: 5px;
+    line-height: 140%;
+}
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta-name="viewport"content="width=device-width, user-scaleable=yes, initial-scale=0.3, maximum-scale=1.0, minimun-scale=0.3">
+        <title>TEENS IN TIME</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <header>
+            <a href="#" class="brand">TEENS IN TIME</a>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="#">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="product.html">Products</a>
+                    <a href="review.html">Review</a>
+                </div>
+            </div>
+         </header>
+
+         <section class="home">
+            <video class="video-slide active" src="videos/mjq.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videos/dcx.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videos/syx.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videos/lyw.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videos/zzy.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videos/yhx.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videos/hjl.mp4" autoplay muted loop></video>
+        
+            <div class="content active">
+                <h1>TNT<br><span>MA JIA QI</span></h1>
+                <a href="product.html">Shop</a>
+            </div>
+            
+            <div class="content">
+                <h1>TNT<br><span>DING CHENG XIN</span></h1>
+                <a href="product.html">Shop</a>
+            </div>
+            
+            <div class="content">
+                <h1>TNT<br><span>SONG YA XUAN</span></h1>
+                <a href="product.html">Shop</a>
+            </div>
+            
+            <div class="content">
+                <h1>TNT<br><span>LIU YAO WEN</span></h1>
+                <a href="product.html">Shop</a>
+            </div>
+            
+            <div class="content">
+                <h1>TNT<br><span>ZHANG ZHEN YUAN</span></h1>
+                <a href="product.html">Shop</a>
+            </div>
+            
+            <div class="content">
+                <h1>TNT<br><span>YAN HAO XIANG</span></h1>
+                <a href="product.html">Shop</a>
+            </div>
+            
+            <div class="content">
+                <h1>TNT<br><span>HE JUN LIN</span></h1>
+                <a href="product.html">Shop</a>
+            </div>
+            
+            <div class="media-icons">
+                <a href="https://www.instagram.com/teensintimes_official/"><i class="fab fa-instagram"></i></a>
+                <a href="https://m.weibo.cn/u/6620842908?t=0&luicode=10000011&lfid=231583"><i class="fa-brands fa-weibo"></i></a>
+            </div>
+        
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+            const btns = document.querySelectorAll(".nav-btn");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
+
+        // Function to change the slider manually
+        function sliderNav(manual){
+            btns.forEach((btn)=> {
+                btn.classList.remove("active");
+        });
+
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        contents.forEach((content) => {
+            content.classList.remove("active");
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+        }
+
+        // Event listeners for navigation buttons
+        btns.forEach((btn,i) => {
+            btn.addEventListener("click",()=> {
+                sliderNav(i);
+            });
+        });
+
+// Auto-slide functionality
+let currentSlide = 0;  // Fixed typo here
+function autoslide() {
+    currentSlide++;  // Fixed typo here
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;  // Reset to 0 when all slides have been shown
+    }
+    sliderNav(currentSlide);  // Update the slide, content, and nav button
+}
+
+setInterval(autoslide, 7000); // Automatically change slide every 7 seconds
+
+        </script>
+        
+    </body>
+</html>
